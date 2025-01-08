@@ -189,14 +189,14 @@ export const BottomSheet = React.forwardRef<
         () => onSpringCancelRef.current?.({ type: 'OPEN' }),
         []
       ),
-      onSnapCancel: useCallback(
-        (context) =>
-          onSpringCancelRef.current?.({
-            type: 'SNAP',
-            source: context.snapSource,
-          }),
-        []
-      ),
+      // onSnapCancel: useCallback(
+      //   (context) =>
+      //     onSpringCancelRef.current?.({
+      //       type: 'SNAP',
+      //       source: context.snapSource,
+      //     }),
+      //   []
+      // ),
       onCloseCancel: useCallback(
         () => onSpringCancelRef.current?.({ type: 'CLOSE' }),
         []
@@ -213,14 +213,14 @@ export const BottomSheet = React.forwardRef<
         () => onSpringEndRef.current?.({ type: 'OPEN' }),
         []
       ),
-      onSnapEnd: useCallback(
-        (context, event) =>
-          onSpringEndRef.current?.({
-            type: 'SNAP',
-            source: context.snapSource,
-          }),
-        []
-      ),
+      // onSnapEnd: useCallback(
+      //   (context, event) =>
+      //     onSpringEndRef.current?.({
+      //       type: 'SNAP',
+      //       source: context.snapSource,
+      //     }),
+      //   []
+      // ),
       onResizeEnd: useCallback(
         () =>
           onSpringEndRef.current?.({
